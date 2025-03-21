@@ -48,9 +48,10 @@ export const RightExecBioCard = ({ bio, email, name, position, image }) => {
           <a href={`mailto:${email}`}>
             <MarkunreadRoundedIcon
               sx={{
+                color: '#fff',
                 width: theme.spacing(4.5),
                 height: theme.spacing(4.5),
-                color: '#fff'
+                margin: theme.spacing(0.5, 0, 0),
               }}
             />
           </a>

@@ -1,4 +1,5 @@
 // TODO: Add the ZOO easter egg by clicking on the avatar
+// TODO: Create mobile nav bar
 
 // Package Imports
 import React from "react";

@@ -39,6 +39,7 @@ export const CommCard = ({ role, description, names }) => {
           textTransform: "uppercase",
           boxShadow: theme.shadows,
           color: theme.palette.text.primary,
+          background: "#fff",
           padding: theme.spacing(1, 3),
         }}
       >

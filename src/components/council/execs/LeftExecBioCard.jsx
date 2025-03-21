@@ -1,5 +1,7 @@
 // Component that has image and bio description from each exec
 // pass in image, email, role name, and pass in text (name, bio)
+
+// Package Imports
 import React from "react";
 import { useTheme, Grid, Typography, Avatar } from "@mui/material";
 
@@ -22,20 +24,21 @@ export const LeftExecBioCard = ({ bio, email, name, position, image }) => {
         />
         <Avatar
           sx={{
+            bgcolor: theme.palette.text.primary,
             position: "relative",
             left: theme.spacing(16),
             bottom: theme.spacing(6.25),
             width: theme.spacing(7),
             height: theme.spacing(7),
-            bgcolor: theme.palette.text.primary,
           }}
         >
           <a href={`mailto:${email}`}>
             <MarkunreadRoundedIcon
               sx={{
+                color: "#fff",
                 width: theme.spacing(4.5),
                 height: theme.spacing(4.5),
-                color: "#fff",
+                margin: theme.spacing(0.5, 0, 0),
               }}
             />
           </a>
