@@ -44,13 +44,16 @@ export const CouncilSection = ({ isRecruiting }) => {
             <div
               style={{
                 display: "flex",
-                alignContent: "end",
                 flexDirection: "column",
+                alignItems: "end",
               }}
             >
               <Typography
                 variant="body1"
-                sx={{ padding: theme.spacing(5, 0, 3), width: "50%" }}
+                sx={{
+                  padding: theme.spacing(5, 0, 3),
+                  width: "51%",
+                }}
               >
                 <b>If you're interested in joining ZOO</b> as one of the above
                 roles, click the button to download our form and submit it to{" "}

@@ -1,5 +1,6 @@
 // Component that has image and bio description from each exec
 // pass in image, email, role name, and pass in text (name, bio)
+// TODO: Change the styling on small screens to have the flexFlow be column (and change alignment/padding)
 
 // Package Imports
 import React from "react";

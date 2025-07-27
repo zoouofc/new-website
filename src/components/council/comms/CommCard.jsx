@@ -40,7 +40,7 @@ export const CommCard = ({ role, description, names }) => {
           boxShadow: theme.shadows,
           color: theme.palette.text.primary,
           background: "#fff",
-          padding: theme.spacing(1, 3),
+          padding: theme.spacing(1, 1, 1, 3),
         }}
       >
         {role}

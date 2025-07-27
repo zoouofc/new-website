@@ -12,77 +12,85 @@ import external2 from "../../assets/execs/external2.png";
 import finance from "../../assets/execs/finance.png";
 import finance2 from "../../assets/execs/finance2.png";
 import internal from "../../assets/execs/internal.png";
+import internal2 from "../../assets/execs/internal2.png";
 
 export const execInfo = [
   {
     execPosition: "President",
     execEmail: "president@zooengg.ca",
-    execName: "Yashpreet Singh",
-    execBio: "Hello! My name is Yashpreet, and I'm entering my final year of Electrical Engineering. I've been part of ZOO for the better part of my academic journey and have always loved being part of this close-knit community. This year, I'm excited to serve as the president of ZOO, and I look forward to ensuring everyone has the best experience possible. Feel free to message or email me if you have any concerns or just want to say hi!",
+    execName: "Rumaisa Talukder",
+    execBio: "Hi everyone! I'm Rumaisa, and I'm heading into my final year of Software Engineering. I'm excited to serve as your President for the 2025-2026 ZOO Council. Having previously served as your VP Academic in 2022-2023, I've seen the impact this community can make, and I'm eager to continue that momentum with a dedicated, passionate team. I'm focused on strengthening connections across all year levels and supporting initiatives that reflect your needs - whether it's academic support, industry engagement, or fun ways to de-stress together. I want to ensure that ZOO remains a welcoming space where everyone's ideas and voices are heard. If you have any feedback, questions, or just want to chat, my inbox is always open. Can't wait to see what we'll accomplish this year!",
     image: president
   },
   {
     execPosition: "Co-VP Academic",
     execEmail: "academic@zooengg.ca",
-    execName: "Jun Chao",
-    execBio: "Hi everyone, I'm Jun, a third-year Electrical and Computer Engineering student, and I'm excited to be one of the Co-VPs Academics! I look forward to working with the ZOO council to create more academic events such as research nights, workshops, and other academic (or not) related events! If you see me in the hallway, feel free to come up and say hi. I love meeting people, and you can catch me at random events if there's food involved!",
+    execName: "Devon Robert Calvin",
+    execBio: "Hi everyone, I'm Devon, I'm going into my third-year of Electrical and Computer Engineering, and I'm excited to be one of the Co-VP Academics! I look forward to working with the ZOO council to create more academic resources for students through the set up of programs I'd like to start such as PASS for department specific courses and bringing back the ZOO class resource bank. Furthermore, I want to maintain the and expand high standard for the academic events students have come to expect. I'm excited to be apart of this community and to advocate for students and their concerns. Don't be afraid to reach out, whether you have an issue or just want to say hi!",
     image: academic
   },
   {
     execPosition: "Co-VP Academic",
     execEmail: "academic@zooengg.ca",
-    execName: "Simon Xu",
-    execBio: "Hello! I'm Simon Xu, entering my final year of Electrical Engineering at the University of Calgary. Throughout my academic journey, I've been deeply involved in ZOO, a community I cherish. This year, alongside Jun Chao, I have the privilege of serving as Co-VP Academic for ZOO, where we are dedicated to enhancing our academic programs and ensuring everyone has a fantastic experience. Feel free to reach out via message or email with any questions or just to say hello!",
+    execName: "Harold Kim",
+    execBio: "Hi, I'm Harold, entering my third year of Software Engineering, and I'm one of the Academic Co-VPs for this year. Quick facts about me: I'm Korean, I like to watch hockey(🍁) and tennis, and I'm a great person to talk to 1 on 1! Joining ZOO has helped me open up to people and build up the courage to explore new opportunities, like this Academic VP position. I'm committed to representing Software and Electrical students well, and I hope to see you at our academic events this year!",
     image: academic2
   },
   {
     execPosition: "Co-VP Events",
     execEmail: "events@zooengg.ca",
-    execName: "Aaryan Deshpande",
-    execBio: "Hi! My name is Aaryan, I'm currently a third-year Electrical and Computer Engineering student, and I'm excited to take on the role of VP Events this year! I'm excited to bring the electrical and software community closer together with some exciting events, and I definitely look forward to bringing students with more opportunities to meet their peers, network, and have fun! If you ever have any questions, comments or suggestions, you can always reach out to our email and I'll be happy to chat. Cheers to a great year!",
+    execName: "Akila Virendra Fernando",
+    execBio: "Greetings, I'm Akila and I'm currently in my 3rd year for software engineering and will be Mr. Co VP events this year for ZOO. The reason I joined ZOO was to uphold our departments dominance in Schulich and make sure everyone knows about the army we control. I will be doing this by hosting wholesome and heartwarming events that bring all of us together in unison. In the end my goal will be to make sure everyone says “ZOO is the best society ever, our society could never be as good as ZOO",
     image: events
   },
   {
     execPosition: "Co-VP Events",
     execEmail: "events@zooengg.ca",
-    execName: "Cody Diao",
-    execBio: "Hello! My name is Cody, I'm currently a third-year Electrical Engineering student, and I'm thrilled to take on the role of VP Events this year! I'm excited about making an impact through the events we'll be hosting, by providing diverse opportunities for networking and fun. As part of ZOO, we're committed to bringing engaging activities and events to the community. If you have any questions or event suggestions, please feel free to reach out. Cheers to a fun and exciting year together!",
+    execName: "Samipya Rijal",
+    execBio: "Hi! My name is Samipya, and I going to my third year of Electrical and Computer Engineering, and I am excited to be one of the Co-VP Events for Zoo this year. I look forward to working with the rest of the Zoo Council in planning amazing events for all electrical and software students to meet new people, form better connections and to have fun. If you have any questions or just want to say hi, don't hesitate to contact me as I happy to meet new people",
     image: events2
   },
   {
     execPosition: "Co-VP External",
     execEmail: "external@zooengg.ca",
-    execName: "Arshiya Shaheen",
-    execBio: "Hello everyone, my name is Arshiya and I'm going into my third year of Electrical Engineering. I'm super excited to be one of your Vice President Externals this year, and bring a diverse range of career oppurtunites for software and electrical engineering students! If you see me around don't hesitate to say hi (I love meeting new people :D)",
-    image: external2
+    execName: "Marya Rachdi",
+    execBio: "Hello! My name is Marya and I'm very excited to serve as one of your VP Externals this year! As a third-year student pursuing a dual major in Electrical Engineering and Business, I'm passionate about helping the community and creating meaningful opportunities for my peers. In this role, I hope to strengthen ZOO's presence by building partnerships, securing sponsorships, and proudly representing our society. If you ever have questions, thoughts, or ideas to share, feel free to reach out!",
+    image: external
   },
   {
     execPosition: "Co-VP External",
     execEmail: "external@zooengg.ca",
-    execName: "Muhammad Rafiuzzaman",
-    execBio: "Hey there! I'm Rafi, and I'm thrilled to take on the role of one of your Vice President Externals this year! As I gear up for my third year in electrical engineering, I'm eager to channel my passion and expertise into this exciting opportunity. At ZOO, I'm all about fostering meaningful connections and partnerships with external stakeholders. Whether it's collaborating with industry leaders, seeking out sponsorship opportunities, or representing our organization in the wider community, I'm dedicated to ensuring that our initiatives thrive and make a lasting impact.",
-    image: external
+    execName: "Yassin Shehata",
+    execBio: "Hey! I'm Yassin, a third-year Electrical and Computer Engineering student, and I'm excited to be one of your Vice Presidents External this year. I'm passionate about creating meaningful partnerships and helping bridge the gap between students and the industry. This year, I'll be working to bring in exciting sponsorships, networking opportunities, and events that benefit our entire community. If you have any questions or ideas, don't hesitate to reach out to me, I'm always happy to chat!",
+    image: external2
   },
   {
     execPosition: "Co-VP Finance",
     execEmail: "finance@zooengg.ca",
-    execName: "Albert Tri",
-    execBio: "Hello! My name is Albert, and I'm entering my third year of Electrical and Computer Engineering. I'm excited to take on the role of Vice President of Finance and look forward to this amazing opportunity to work with other team members this year. I will be working with the team to ensure that our finances run smoothly so that everyone can have the best experience possible. Feel free to reach out if you have any questions or concerns. See you around! 🙂",
+    execName: "Andy Wang",
+    execBio: "",
     image: finance
   },
   {
     execPosition: "Co-VP Finance",
     execEmail: "finance@zooengg.ca",
-    execName: "Tanveer Parhar",
-    execBio: "Hi! I'm Tanveer, a third-year in Electrical and Computer Engineering, and I'm psyched to be part of the Zoo Council as Co-VP Finance! I'm looking forward to supporting the rest of the VPs with their events this year, and getting us lots of money for community outreach! I also have a bit of a bouldering addiction, so there's a very good chance you'll see me at the UofC wall. Don't be shy to say hi and ask me any questions if you see me around, I'm always happy to meet new people!",
+    execName: "Caleb Garcia",
+    execBio: "",
     image: finance2
   },
   {
     execPosition: "VP Internal",
     execEmail: "internal@zooengg.ca",
-    execName: "Ravindith Singarachchige",
-    execBio: "Hello everyone! My name is Ravindith, but feel free to call me Ravi. I'm excited to serve as your VP Internal. As a Software Engineering student entering my third year, I'm passionate about technology and building a strong community. My goal is to increase our outreach and social media presence, ensuring everyone stays engaged with zoo. Don't hesitate to stop me for a chat if you see me around; I'm always eager to meet new people and hear your ideas. Looking forward to an amazing year together!",
+    execName: "Chloe Fulbrook",
+    execBio: "",
     image: internal
+  },
+  {
+    execPosition: "VP Internal",
+    execEmail: "internal@zooengg.ca",
+    execName: "Millaine Li",
+    execBio: "",
+    image: internal2
   },
 ];
 
@@ -93,44 +101,37 @@ export const commInfo = [
     commDescription:
       "In this role, you will coordinate with VP Academic to plan and host various academic-oriented events.",
     commNames: [
-      "Akila Fernando",
-      "Damon Mazurek",
-      "Yu Xiang Sun",
-      "Zehra Zaidi",
     ],
   },
   {
     commRole: "Artistic Commissioner",
     commDescription:
       "In this role, you will be responsible for creating various media for Society events & merchandise.",
-    commNames: ["Ines Rosito", "Rostom Halouane"],
+    commNames: [],
   },
   {
     commRole: "ENGG/Frosh Week Director",
     commDescription:
       "In this role, you will direct the Society's involvement in Frosh and ENGG week. Includes recruiting, participation, etc.",
-    commNames: ["Sofi Tapias"],
+    commNames: [],
   },
   {
     commRole: "Marketing Commissioner",
     commDescription:
       "In this role, you will assist the VP Internal with their duties of inter- and intra-Society communication.",
-    commNames: ["Muskan Fatima", "Nooran Ahmed",],
+    commNames: [],
   },
   {
     commRole: "Social Events Commissioner",
     commDescription:
       "In this role, you will coordinate with VP Events to plan and host various social-oriented events.",
-    commNames: ["Yu Xiang Sun"],
+    commNames: [],
   },
   {
     commRole: "Sponsorship Commissioner",
     commDescription:
       "In this role, you will coordinate with VP External & Finance to ensure that the financial needs of the Society are met by securing sponsorships.",
     commNames: [
-      "Maheen Raza",
-      "Marya Rachdi",
-      "Yassin Shehata"
     ],
   },
   {
@@ -150,9 +151,6 @@ export const commInfo = [
     commDescription:
       "Reps act as a bridge between the Society and its members, announcing major Society events to peers in your year.",
     commNames: [
-      "Aadi Chauhan (3rd Year)",
-      "Connor Hunszinger (4th Year)",
-      "Keshaven Payen (2nd Year)"
     ],
   },
   {

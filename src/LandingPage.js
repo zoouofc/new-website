@@ -18,7 +18,6 @@ import { useTheme } from "@mui/material";
 const LandingPage = () => {
   // Variable to manually update when we are no longer recruiting. Improved approach to commenting out code as needed :)
   const isRecruiting = true;
-  const theme = useTheme()
 
   return (
     <ThemeProvider theme={rootTheme}>

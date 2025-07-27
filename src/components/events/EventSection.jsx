@@ -7,10 +7,22 @@ import {
   useTheme,
   Grid,
   Button,
+  Card,
 } from "@mui/material";
 
 // Project-defined Components
 import { Calendar } from "./Calendar";
+
+const eventList = [
+  { name: "Technology Fair", icon: "", description: "" },
+  { name: "Internship Panels", icon: "", description: "" },
+  { name: "Speaker Sessions", icon: "", description: "" },
+  { name: "Technology Workshops", icon: "", description: "" },
+  { name: "Conference & Trips", icon: "", description: "" },
+  { name: "Technical Elective Night", icon: "", description: "" },
+  { name: "LAN Parties", icon: "", description: "" },
+  { name: "ENGG Week", icon: "", description: "" },
+];
 
 export const EventSection = () => {
   const theme = useTheme();
@@ -51,18 +63,52 @@ export const EventSection = () => {
         </Typography>
 
         {/* Renders the multiple buttons that can be clicked on to reveal more data on commissioner roles */}
-        <Grid container spacing={2} columns={2} sx={{ margin: "unset" }}>
-          {/* {commInfo.map((comm) => {
-          return (
-            <Grid xs={2} md={1}>
-              <CommCard
-                role={comm.commRole}
-                description={comm.commDescription}
-                names={comm.commNames}
-              />
-            </Grid>
-          );
-        })} */}
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={3}
+          columns={3}
+          sx={{
+            justifyContent: "center",
+          }}
+        >
+          {eventList.map((event, index) => {
+            return (
+              <Grid
+                item
+                key={index}
+                xs={2}
+                md={1}
+                sx={{
+                  margin: theme.spacing(1, 0, 3),
+                  width: theme.spacing(20),
+                  justifyItems: "center",
+                  padding: 0,
+                }}
+              >
+                <Card
+                  sx={{
+                    height: theme.spacing(34),
+                    maxWidth: theme.spacing(34),
+                    minWidth: theme.spacing(34),
+                    padding: theme.spacing(5, 4),
+                    textAlign: "center",
+                    boxShadow: theme.shadows,
+                  }}
+                >
+                  {event.icon}
+                  <Typography
+                    sx={{
+                      // textTransform: "uppercase",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {event.name}
+                  </Typography>
+                </Card>
+              </Grid>
+            );
+          })}
         </Grid>
 
         <Box sx={{ justifyContent: "center", display: "flex" }}>
@@ -77,12 +123,22 @@ export const EventSection = () => {
 
         <Calendar />
 
-        <Typography variant="h4">Our Past Events</Typography>
-        <Typography variant="body1" sx={{ fontStyle: "italic" }} paragraph>
-          Interested in our past events? Check our event/activity gallery for a
-          look into our other successful events
-        </Typography>
-        <Button variant="filled">VIEW GALLERY</Button>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "end",
+            textAlign: "right",
+            margin: theme.spacing(5, 0, 0),
+          }}
+        >
+          <Typography variant="h4">Our Past Events</Typography>
+          <Typography variant="body1" sx={{ width: "60%" }} paragraph>
+            Interested in our past events? Check our event and activity gallery
+            for a look into our other successful events
+          </Typography>
+          <Button variant="filled">VIEW GALLERY</Button>
+        </div>
       </Container>
     </>
   );
