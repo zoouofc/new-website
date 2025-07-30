@@ -33,20 +33,18 @@ export const Carousel = () => {
         loop: true,
         renderMode: "performance",
         slides: {
-          origin: "center",
-          perView: 1, // thus one is for mobile
-          spacing: 15,
+          origin: "center"
         },
         breakpoints: {
-          "(min-width: 768px)": {
+          "(min-width: 768px)": { // Mobile
             slides: {
               perView: 1,
               spacing: 15,
             },
           },
-          "(min-width: 1024px)": {
+          "(min-width: 1024px)": { // Desktop or Larger iPads
             slides: {
-              perView: 3, // desktop or bigger ipads
+              perView: 3,
               spacing: 15,
             },
           },
@@ -94,37 +92,37 @@ export const Carousel = () => {
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           <img
-            className="keen-slider__slide number-slide1"
+            className="keen-slider__slide"
             src={SocialMediaBanner}
             alt="social-media-banner"
           />
           <img
-            className="keen-slider__slide number-slide2"
+            className="keen-slider__slide"
             src={CouncilGroup24}
             alt="2024-group-council"
           />
           <img
-            className="keen-slider__slide number-slide3"
+            className="keen-slider__slide"
             src={CouncilGroup22}
             alt="2022-group-council"
           />
           <img
-            className="keen-slider__slide number-slide4"
+            className="keen-slider__slide"
             src={CouncilGroup21}
             alt="2021`-group-council"
           />
           <img
-            className="keen-slider__slide number-slide5"
+            className="keen-slider__slide"
             src={CouncilGroup20}
             alt="2020-group-council"
           />
           <img
-            className="keen-slider__slide number-slide6"
+            className="keen-slider__slide"
             src={CouncilGroup18}
             alt="2018-group-council"
           />
           <img
-            className="keen-slider__slide number-slide7"
+            className="keen-slider__slide"
             src={CouncilGroup16}
             alt="2016-group-council"
           />
