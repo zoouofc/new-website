@@ -29,15 +29,29 @@ export const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      initial: 0,
-      loop: true,
-      renderMode: "performance",
-      slides: {
-        origin: "center",
-        perView: 3,
-        spacing: 15,
+        initial: 0,
+        loop: true,
+        renderMode: "performance",
+        slides: {
+          origin: "center",
+          perView: 1, // thus one is for mobile
+          spacing: 15,
+        },
+        breakpoints: {
+          "(min-width: 768px)": {
+            slides: {
+              perView: 1,
+              spacing: 15,
+            },
+          },
+          "(min-width: 1024px)": {
+            slides: {
+              perView: 3, // desktop or bigger ipads
+              spacing: 15,
+            },
+          },
+        },
       },
-    },
     [
       (slider) => {
         let timeout;
