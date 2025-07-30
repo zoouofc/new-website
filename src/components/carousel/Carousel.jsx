@@ -14,7 +14,13 @@ import "keen-slider/keen-slider.min.css";
 import "./styles.css";
 
 // Image Import
-import SocialMediaBanner from "../../assets/SocialMediaBanner.png";
+import CouncilGroup24 from "../../assets/carousel/CouncilGroup24.png";
+import CouncilGroup22 from "../../assets/carousel/CouncilGroup22.png";
+import CouncilGroup21 from "../../assets/carousel/CouncilGroup21.png";
+import CouncilGroup20 from "../../assets/carousel/CouncilGroup20.png";
+import CouncilGroup18 from "../../assets/carousel/CouncilGroup18.png";
+import CouncilGroup16 from "../../assets/carousel/CouncilGroup16.png";
+import SocialMediaBanner from "../../assets/carousel/SocialMediaBanner.png";
 
 export const Carousel = () => {
   const theme = useTheme();
@@ -23,15 +29,27 @@ export const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider(
     {
-      initial: 0,
-      loop: true,
-      renderMode: "performance",
-      slides: {
-        origin: "center",
-        perView: 3,
-        spacing: 15,
+        initial: 0,
+        loop: true,
+        renderMode: "performance",
+        slides: {
+          origin: "center"
+        },
+        breakpoints: {
+          "(min-width: 768px)": { // Mobile
+            slides: {
+              perView: 1,
+              spacing: 15,
+            },
+          },
+          "(min-width: 1024px)": { // Desktop or Larger iPads
+            slides: {
+              perView: 3,
+              spacing: 15,
+            },
+          },
+        },
       },
-    },
     [
       (slider) => {
         let timeout;
@@ -74,14 +92,40 @@ export const Carousel = () => {
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           <img
-            className="keen-slider__slide number-slide2"
+            className="keen-slider__slide"
             src={SocialMediaBanner}
+            alt="social-media-banner"
           />
-          <div className="keen-slider__slide number-slide2">2</div>
-          <div className="keen-slider__slide number-slide3">3</div>
-          <div className="keen-slider__slide number-slide4">4</div>
-          <div className="keen-slider__slide number-slide5">5</div>
-          <div className="keen-slider__slide number-slide6">6</div>
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup24}
+            alt="2024-group-council"
+          />
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup22}
+            alt="2022-group-council"
+          />
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup21}
+            alt="2021`-group-council"
+          />
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup20}
+            alt="2020-group-council"
+          />
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup18}
+            alt="2018-group-council"
+          />
+          <img
+            className="keen-slider__slide"
+            src={CouncilGroup16}
+            alt="2016-group-council"
+          />
         </div>
         {loaded && instanceRef.current && (
           <>
