@@ -11,9 +11,21 @@ import MarkunreadRoundedIcon from "@mui/icons-material/MarkunreadRounded";
 
 export const LeftExecBioCard = ({ bio, email, name, position, image }) => {
   const theme = useTheme();
+  const isCentered = !bio || bio.trim() === "";
+
+  
 
   return (
-    <Grid container sx={{ padding: theme.spacing(2, 0), flexFlow: "row" }}>
+    <Grid
+      container
+        sx={{
+          padding: theme.spacing(2, 0),
+          flexFlow: "row",
+          justifyContent: isCentered ? "center" : "flex-start",
+          alignItems: isCentered ? "center" : "flex-start",
+        }}
+      >
+
       <Grid
         item
         sx={{ padding: theme.spacing(0, 2, 0, 0), alignContent: "center" }}

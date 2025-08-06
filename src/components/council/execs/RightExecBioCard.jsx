@@ -11,6 +11,8 @@ import MarkunreadRoundedIcon from "@mui/icons-material/MarkunreadRounded";
 
 export const RightExecBioCard = ({ bio, email, name, position, image }) => {
   const theme = useTheme();
+  const isCentered = !bio || bio.trim() === "";
+
 
   return (
     <Grid
@@ -19,6 +21,8 @@ export const RightExecBioCard = ({ bio, email, name, position, image }) => {
         flexFlow: "row",
         textAlign: "right",
         padding: theme.spacing(2, 0),
+        justifyContent: isCentered ? "center" : "flex-end",
+        alignItems: isCentered ? "center" : "flex-start",
       }}
     >
       <Grid item size="grow">
