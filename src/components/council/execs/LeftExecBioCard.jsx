@@ -9,23 +9,26 @@ import { useTheme, Grid, Typography, Avatar } from "@mui/material";
 // Icon Imports
 import MarkunreadRoundedIcon from "@mui/icons-material/MarkunreadRounded";
 
-export const LeftExecBioCard = ({ bio, email, name, position, image }) => {
+export const LeftExecBioCard = ({
+  bio,
+  email,
+  name,
+  position,
+  image,
+  isBioPresent,
+}) => {
   const theme = useTheme();
-  const isCentered = !bio || bio.trim() === "";
-
-  
 
   return (
     <Grid
       container
-        sx={{
-          padding: theme.spacing(2, 0),
-          flexFlow: "row",
-          justifyContent: isCentered ? "center" : "flex-start",
-          alignItems: isCentered ? "center" : "flex-start",
-        }}
-      >
-
+      sx={{
+        padding: theme.spacing(2, 0),
+        flexFlow: "row",
+        justifyContent: isBioPresent ? "flex-start" : "center",
+        alignItems: isBioPresent ? "flex-start" : "center",
+      }}
+    >
       <Grid
         item
         sx={{ padding: theme.spacing(0, 2, 0, 0), alignContent: "center" }}
@@ -62,9 +65,14 @@ export const LeftExecBioCard = ({ bio, email, name, position, image }) => {
           {name}
         </Typography>
         <Typography variant="subtitle1">{position}</Typography>
-        <Typography variant="body1" sx={{ padding: theme.spacing(1.5, 0, 0) }}>
-          {bio}
-        </Typography>
+        {isBioPresent && (
+          <Typography
+            variant="body1"
+            sx={{ padding: theme.spacing(1.5, 0, 0) }}
+          >
+            {bio}
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

@@ -9,10 +9,15 @@ import { useTheme, Grid, Typography, Avatar } from "@mui/material";
 // Icon Imports
 import MarkunreadRoundedIcon from "@mui/icons-material/MarkunreadRounded";
 
-export const RightExecBioCard = ({ bio, email, name, position, image }) => {
+export const RightExecBioCard = ({
+  bio,
+  email,
+  name,
+  position,
+  image,
+  isBioPresent,
+}) => {
   const theme = useTheme();
-  const isCentered = !bio || bio.trim() === "";
-
 
   return (
     <Grid
@@ -21,8 +26,8 @@ export const RightExecBioCard = ({ bio, email, name, position, image }) => {
         flexFlow: "row",
         textAlign: "right",
         padding: theme.spacing(2, 0),
-        justifyContent: isCentered ? "center" : "flex-end",
-        alignItems: isCentered ? "center" : "flex-start",
+        justifyContent: isBioPresent ? "flex-start" : "center",
+        alignItems: isBioPresent ? "flex-start" : "center"
       }}
     >
       <Grid item size="grow">
@@ -30,9 +35,14 @@ export const RightExecBioCard = ({ bio, email, name, position, image }) => {
           {name}
         </Typography>
         <Typography variant="subtitle1">{position}</Typography>
-        <Typography variant="body1" sx={{ padding: theme.spacing(1.5, 0, 0) }}>
-          {bio}
-        </Typography>
+        {isBioPresent && (
+          <Typography
+            variant="body1"
+            sx={{ padding: theme.spacing(1.5, 0, 0) }}
+          >
+            {bio}
+          </Typography>
+        )}
       </Grid>
       <Grid item sx={{ padding: theme.spacing(0, 0, 0, 2) }}>
         <Avatar
@@ -53,7 +63,7 @@ export const RightExecBioCard = ({ bio, email, name, position, image }) => {
           <a href={`mailto:${email}`}>
             <MarkunreadRoundedIcon
               sx={{
-                color: '#fff',
+                color: "#fff",
                 width: theme.spacing(4.5),
                 height: theme.spacing(4.5),
                 margin: theme.spacing(0.5, 0, 0),

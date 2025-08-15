@@ -3,6 +3,7 @@
 // Package Imports
 import React from "react";
 import { useTheme, Typography } from "@mui/material";
+import { isEmpty } from "lodash";
 
 // Project-defined Imports
 import { execInfo } from "../CouncilInfo";
@@ -29,6 +30,8 @@ export const ExecSubSection = () => {
 
       {/* Renders the multiple exec components */}
       {execInfo.map((exec, index) => {
+        const isBioPresent = !isEmpty(exec.execBio);
+
         if (index % 2) {
           return (
             <RightExecBioCard
@@ -38,6 +41,7 @@ export const ExecSubSection = () => {
               name={exec.execName}
               position={exec.execPosition}
               image={exec.image}
+              isBioPresent={isBioPresent}
             />
           );
         } else {
@@ -49,6 +53,7 @@ export const ExecSubSection = () => {
               name={exec.execName}
               position={exec.execPosition}
               image={exec.image}
+              isBioPresent={isBioPresent}
             />
           );
         }
