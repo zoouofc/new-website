@@ -31,7 +31,7 @@ export const CommDialog = ({ open, setOpen, role, description, names }) => {
         <DialogTitle>
           <Typography variant="h5">Responsibilities of {role}s</Typography>
         </DialogTitle>
-        <DialogContent sx={{ paddingTop: 0 }}>
+        <DialogContent sx={{ padding: theme.spacing(0, 5) }}>
           <Typography variant="subtitle1" paragraph>
             {description}
           </Typography>

@@ -82,7 +82,7 @@ export const execInfo = [
     execPosition: "VP Internal",
     execEmail: "internal@zooengg.ca",
     execName: "Chloe Fulbrook",
-    execBio: "",
+    execBio: "Hey! I'm Chloe and I'm headed into my third year of Electrical and Biomedical Engineering.I'm excited to be one of your Co-VPs Internal this year! I'll be supporting the rest of your fantastic ZOO Council, keeping you in the loop through social media and emails, and managing the homeroom.If you've got any comments or suggestions, or just want to say hello, feel free to reach out! Can't wait to see you at our events this year!",
     image: internal
   },
   {
@@ -100,57 +100,69 @@ export const commInfo = [
     commRole: "Academic Events Commissioner",
     commDescription:
       "In this role, you will coordinate with VP Academic to plan and host various academic-oriented events.",
-    commNames: [
-    ],
+    commNames: ["Anaya Adil", "Graham Coleman", "Jacob Terlesky"],
   },
   {
     commRole: "Artistic Commissioner",
     commDescription:
       "In this role, you will be responsible for creating various media for Society events & merchandise.",
-    commNames: [],
+    commNames: ["Jun Wu"],
   },
   {
     commRole: "ENGG/Frosh Week Director",
     commDescription:
       "In this role, you will direct the Society's involvement in Frosh and ENGG week. Includes recruiting, participation, etc.",
-    commNames: [],
+    commNames: ["Lein Abdalla"],
+  },
+  {
+    commRole: "Finance Commissioner",
+    commDescription: "",
+    commNames: ["Owen Tillapaugh"],
   },
   {
     commRole: "Marketing Commissioner",
     commDescription:
       "In this role, you will assist the VP Internal with their duties of inter- and intra-Society communication.",
-    commNames: [],
+    commNames: ["Ashab Naveed", "Ifeoluwa Owolabi", "Nate Immerkar"],
   },
   {
     commRole: "Social Events Commissioner",
     commDescription:
       "In this role, you will coordinate with VP Events to plan and host various social-oriented events.",
-    commNames: [],
+    commNames: ["Austin Tran", "Brian Oh", "Diana Raduta", "Rachel Mercado"],
   },
   {
     commRole: "Sponsorship Commissioner",
     commDescription:
       "In this role, you will coordinate with VP External & Finance to ensure that the financial needs of the Society are met by securing sponsorships.",
     commNames: [
+      "Fajar Kakakhel",
+      "Nayha Rehman",
+      "Owen Tillapaugh",
+      "Yu Xiang Sun",
     ],
   },
   {
     commRole: "Trip Director",
     commDescription:
       "In this role, you will be responsible for assisting in the planning of various trips for the Society. Includes Silicon Valley Trip, CUSEC, etc.",
-    commNames: [],
+    commNames: ["Reyansh Badhwar"],
   },
   {
     commRole: "Webmaster",
     commDescription:
       "As Webmaster, you are the core individual responsible for maintaining all the Society's technologies, which include a website, webserver, fileserver, Council emails, and more.",
-    commNames: ["Ines Rosito"],
+    commNames: ["Ines Rosito", "Taha Zuberi"],
   },
   {
     commRole: "ZOO Representative",
     commDescription:
       "Reps act as a bridge between the Society and its members, announcing major Society events to peers in your year.",
-    commNames: [
+    commNames: ["Adil Ijaz (3rd ENEL Year)",
+      "Dawson van Vlaanderen (+5th ENSF Year)",
+      "Hania Aamir (3rd ENSF Year)",
+      "Lex Berezowsk (+5th ENSF Year)",
+      "Toluwani Aribifo",
     ],
   },
   {
