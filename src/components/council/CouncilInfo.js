@@ -25,7 +25,7 @@ export const execInfo = [
   {
     execPosition: "Co-VP Academic",
     execEmail: "academic@zooengg.ca",
-    execName: "Devon Robert Calvin",
+    execName: "Devon Calvin",
     execBio: "Hi everyone, I'm Devon, I'm going into my third-year of Electrical and Computer Engineering, and I'm excited to be one of the Co-VP Academics! I look forward to working with the ZOO council to create more academic resources for students through the set up of programs I'd like to start such as PASS for department specific courses and bringing back the ZOO class resource bank. Furthermore, I want to maintain the and expand high standard for the academic events students have come to expect. I'm excited to be apart of this community and to advocate for students and their concerns. Don't be afraid to reach out, whether you have an issue or just want to say hi!",
     image: academic
   },
@@ -89,7 +89,7 @@ export const execInfo = [
     execPosition: "VP Internal",
     execEmail: "internal@zooengg.ca",
     execName: "Millaine Li",
-    execBio: "",
+    execBio: "Hello! My name is Millaine and I'm excited to be one of your Co-VP Internals for this year's ZOO Council! I'm a Software Engineering student with a mechatronics minor, and am passionate about bringing the ESE student body together by helping organize cool events and providing spaces for students to study, lounge and socialize.If you have any thoughts, questions, or comments, please don't hesitate to reach out!",
     image: internal2
   },
 ];

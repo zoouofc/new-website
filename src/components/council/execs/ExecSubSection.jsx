@@ -30,7 +30,7 @@ export const ExecSubSection = () => {
 
       {/* Renders the multiple exec components */}
       {execInfo.map((exec, index) => {
-        const isBioPresent = !isEmpty(exec.execBio);
+        const isBioPresent = !isEmpty(exec?.execBio);
 
         if (index % 2) {
           return (

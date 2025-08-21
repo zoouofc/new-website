@@ -3,7 +3,7 @@ import React from "react";
 import { Grid, Typography, useTheme } from "@mui/material";
 
 // Project-defined Imports
-import { CommCard } from "./CommCard";
+import { CommDialogButton } from "./CommDialogButton";
 import { commInfo } from "../CouncilInfo";
 
 export const CommSubSection = () => {
@@ -31,7 +31,7 @@ export const CommSubSection = () => {
               md={1}
               sx={{ margin: theme.spacing(1, 0) }}
             >
-              <CommCard
+              <CommDialogButton
                 role={comm.commRole}
                 description={comm.commDescription}
                 names={comm.commNames}

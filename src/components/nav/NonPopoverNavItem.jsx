@@ -2,7 +2,7 @@
 import React from "react";
 import { Typography, useTheme } from "@mui/material";
 
-export const NonPopoverNavItem = ({ href, label }) => {
+export const NonPopoverNavItem = ({ href, label, ...props }) => {
   const theme = useTheme();
   return (
     <a
@@ -11,6 +11,7 @@ export const NonPopoverNavItem = ({ href, label }) => {
         textDecoration: "none",
         color: theme.palette.white.secondary,
       }}
+      {...props}
     >
       <Typography
         variant="body1"

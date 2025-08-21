@@ -1,5 +1,5 @@
 // Package Imports
-import React, { useState } from "react";
+import React from "react";
 import {
   useTheme,
   Dialog,
@@ -11,16 +11,9 @@ import {
 } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-// Icon Imports
-import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
-
-export const CommCard = ({ role, description, names }) => {
+export const CommDialog = ({ open, setOpen, role, description, names }) => {
   const theme = useTheme();
-  const [open, setOpen] = useState(false);
   const fullScreen = useMediaQuery(theme.breakpoints.only("xs"));
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
     setOpen(false);
@@ -28,25 +21,6 @@ export const CommCard = ({ role, description, names }) => {
 
   return (
     <>
-      {/* Dialog Button */}
-      <Button
-        variant="text"
-        aria-label="show-more"
-        onClick={handleClickOpen}
-        sx={{
-          width: theme.spacing(40),
-          justifyContent: "space-between",
-          textTransform: "uppercase",
-          boxShadow: theme.shadows,
-          color: theme.palette.text.primary,
-          background: "#fff",
-          padding: theme.spacing(1, 1, 1, 3),
-        }}
-      >
-        {role}
-        <ArrowForwardIosRoundedIcon />
-      </Button>
-
       {/* Dialog */}
       <Dialog
         fullWidth

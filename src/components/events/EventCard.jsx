@@ -1,14 +1,33 @@
 // Package Imports
 import React from "react";
-import { CardContent, Paper, Typography } from "@mui/material";
+import {
+  Paper,
+  Typography,
+  useTheme,
+} from "@mui/material";
 
-export const EventCard = ({ iconSrc, eventName }) => {
+export const EventCard = ({ icon, eventName }) => {
+  const theme = useTheme();
+
   return (
-    <Paper elevation={3}>
-      <Avatar alt={eventName} src={iconSrc ?? null} variant="rounded" />
-      <Typography variant="h4">{eventName}</Typography>
+    <Paper
+      sx={{
+        minHeight: theme.spacing(34),
+        maxWidth: theme.spacing(34),
+        minWidth: theme.spacing(34),
+        padding: theme.spacing(5, 4),
+        textAlign: "center",
+        boxShadow: theme.shadows,
+      }}
+    >
+      {icon}
+      <Typography
+        sx={{
+          fontWeight: "bold",
+        }}
+      >
+        {eventName}
+      </Typography>
     </Paper>
   );
 };
-
-// TODO: Use Paper from materialUI

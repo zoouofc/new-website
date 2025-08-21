@@ -68,6 +68,13 @@ export const Navbar = ({ id, isRecruiting }) => {
           </NavMenuPopover>
           <NonPopoverNavItem
             variant={variant}
+            label="Merch"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/forms/d/1xklzzmnqItOQTrWebtIDlzhENleiMcjl9xAfOhq5yR4/preview"
+          />
+          <NonPopoverNavItem
+            variant={variant}
             label="Contact Us "
             href="#contact-us"
           />

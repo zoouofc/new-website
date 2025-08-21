@@ -6,23 +6,13 @@ import {
   Typography,
   useTheme,
   Grid,
-  Button,
-  Card,
+  Button
 } from "@mui/material";
 
 // Project-defined Components
 import { Calendar } from "./Calendar";
-
-const eventList = [
-  { name: "Technology Fair", icon: "", description: "" },
-  { name: "Internship Panels", icon: "", description: "" },
-  { name: "Speaker Sessions", icon: "", description: "" },
-  { name: "Technology Workshops", icon: "", description: "" },
-  { name: "Conference & Trips", icon: "", description: "" },
-  { name: "Technical Elective Night", icon: "", description: "" },
-  { name: "LAN Parties", icon: "", description: "" },
-  { name: "ENGG Week", icon: "", description: "" },
-];
+import { EventCard } from "./EventCard";
+import { eventList } from "./EventInfo";
 
 export const EventSection = () => {
   const theme = useTheme();
@@ -86,26 +76,7 @@ export const EventSection = () => {
                   padding: 0,
                 }}
               >
-                <Card
-                  sx={{
-                    height: theme.spacing(34),
-                    maxWidth: theme.spacing(34),
-                    minWidth: theme.spacing(34),
-                    padding: theme.spacing(5, 4),
-                    textAlign: "center",
-                    boxShadow: theme.shadows,
-                  }}
-                >
-                  {event.icon}
-                  <Typography
-                    sx={{
-                      // textTransform: "uppercase",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {event.name}
-                  </Typography>
-                </Card>
+                <EventCard icon={event?.icon} eventName={event?.name} />
               </Grid>
             );
           })}
