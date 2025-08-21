@@ -6,13 +6,14 @@ import {
   Typography,
   useTheme,
   Grid,
-  Button
+  Button,
 } from "@mui/material";
 
 // Project-defined Components
 import { Calendar } from "./Calendar";
 import { EventCard } from "./EventCard";
 import { eventList } from "./EventInfo";
+import { StyledButton } from "../buttons/StyledButton";
 
 export const EventSection = () => {
   const theme = useTheme();
@@ -108,7 +109,7 @@ export const EventSection = () => {
             Interested in our past events? Check our event and activity gallery
             for a look into our other successful events
           </Typography>
-          <Button variant="filled">VIEW GALLERY</Button>
+          <StyledButton>VIEW GALLERY</StyledButton>
         </div>
       </Container>
     </>

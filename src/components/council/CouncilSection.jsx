@@ -5,6 +5,7 @@ import { Typography, Box, Button, useTheme, Container } from "@mui/material";
 // Project-defined Imports
 import { ExecSubSection } from "./execs/ExecSubSection";
 import { CommSubSection } from "./comms/CommSubSection";
+import { StyledButton } from "../buttons/StyledButton";
 
 export const CouncilSection = ({ isRecruiting }) => {
   const theme = useTheme();
@@ -60,9 +61,7 @@ export const CouncilSection = ({ isRecruiting }) => {
                 <a href={`mailto:execs@zooengg.ca`}>execs@zooengg.ca</a> to
                 apply!
               </Typography>
-              <Button sx={{ justifyContent: "end" }} variant="filled">
-                Download
-              </Button>
+              <StyledButton>Download Form</StyledButton>
             </div>
           </Box>
         )}
