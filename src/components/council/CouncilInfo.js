@@ -19,7 +19,7 @@ export const execInfo = [
     execPosition: "President",
     execEmail: "president@zooengg.ca",
     execName: "Rumaisa Talukder",
-    execBio: "Hi everyone! I'm Rumaisa, and I'm heading into my final year of Software Engineering. I'm excited to serve as your President for the 2025-2026 ZOO Council. Having previously served as your VP Academic in 2022-2023, I've seen the impact this community can make, and I'm eager to continue that momentum with a dedicated, passionate team. I'm focused on strengthening connections across all year levels and supporting initiatives that reflect your needs - whether it's academic support, industry engagement, or fun ways to de-stress together. I want to ensure that ZOO remains a welcoming space where everyone's ideas and voices are heard. If you have any feedback, questions, or just want to chat, my inbox is always open. Can't wait to see what we'll accomplish this year!",
+    execBio: "Hey there! I'm Rumaisa, entering my final year of Software Engineering and thrilled to serve as your President for the 2025-2026 ZOO Council. As former VP Academic (2022-2023), I've seen our community's impact and am eager to continue that momentum with a dedicated team. This includes fostering connections across all year levels and supporting initiatives that matter to you - such as academic support, industry engagement, and social activities. I want ZOO to stay a welcoming space where every idea and voice is valued. If you have feedback, questions, or just want to chat, my inbox is always open. Can't wait to see what we'll accomplish this year!",
     image: president
   },
   {
