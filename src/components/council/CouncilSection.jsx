@@ -11,7 +11,12 @@ export const CouncilSection = ({ isRecruiting }) => {
   const theme = useTheme();
 
   return (
-    <div style={{ background: theme.palette.white.secondary, padding: 0 }}>
+    <div
+      style={{
+        background: theme.palette.white.secondary,
+        padding: theme.spacing(0, 0, 5),
+      }}
+    >
       <div
         style={{
           width: "100%",
