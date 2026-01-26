@@ -21,7 +21,18 @@ export const ExecSubSection = () => {
       <div style={{ display: "flex", justifyContent: "end" }}>
         <Typography
           variant="body1"
-          sx={{ fontStyle: "italic", textAlign: "right", width: "50%" }}
+          sx={{
+            fontStyle: "italic",
+            textAlign: "right",
+            width: "65%",
+            padding: theme.spacing(0, 0, 4),
+            [theme.breakpoints.down("md")]: {
+              width: "85%",
+            },
+            [theme.breakpoints.down("sm")]: {
+              width: "95%",
+            },
+          }}
         >
           Meet the leaders of today working to make things happen for all the
           Electrical, Software, and Computer Engineering students!

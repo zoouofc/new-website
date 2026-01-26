@@ -1,6 +1,5 @@
 // Component that has image and bio description from each exec
 // pass in image, email, role name, and pass in text (name, bio)
-// TODO: Change the styling on small screens to have the flexFlow be column (and change alignment/padding)
 
 // Package Imports
 import React from "react";
@@ -27,11 +26,24 @@ export const LeftExecBioCard = ({
         flexFlow: "row",
         justifyContent: isBioPresent ? "flex-start" : "center",
         alignItems: isBioPresent ? "flex-start" : "center",
+        [theme.breakpoints.down("md")]: {
+          flexFlow: "column",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
       }}
     >
       <Grid
         item
-        sx={{ padding: theme.spacing(0, 2, 0, 0), alignContent: "center" }}
+        sx={{
+          padding: theme.spacing(0, 2, 0, 0),
+          alignContent: "center",
+          [theme.breakpoints.down("md")]: {
+            padding: 0,
+            margin: theme.spacing(0, 0, -4),
+          },
+        }}
       >
         <Avatar
           src={image}

@@ -52,7 +52,7 @@ export const EventSection = () => {
           organize!
         </Typography>
 
-        {/* Renders the multiple buttons that can be clicked on to reveal more data on commissioner roles */}
+        {/* Renders the multiple buttons that can be clicked on to reveal more info on the events */}
         <Grid
           container
           rowSpacing={3}
