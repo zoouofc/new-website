@@ -1,9 +1,15 @@
 // TODO: Add the ZOO easter egg by clicking on the avatar
-// TODO: Create mobile nav bar
 
 // Package Imports
-import React from "react";
-import { AppBar, Toolbar, CssBaseline, useTheme, Avatar } from "@mui/material";
+import React, { useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  useTheme,
+  Avatar,
+  Box,
+} from "@mui/material";
 
 // Project-defined Imports
 import {
@@ -13,6 +19,7 @@ import {
 } from "./menu-items";
 import NonPopoverNavItem from "./NonPopoverNavItem";
 import NavMenuPopover from "./popover/NavMenuPopover";
+import MobileNavMenu from "./MobileNavMenu";
 
 // Images
 import ZooLogo from "../../assets/ZooLogo.svg";
@@ -20,6 +27,15 @@ import ZooLogo from "../../assets/ZooLogo.svg";
 export const Navbar = ({ id, isRecruiting }) => {
   const theme = useTheme();
   const variant = "body1";
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleMobileMenuItemClick = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <AppBar
@@ -36,7 +52,15 @@ export const Navbar = ({ id, isRecruiting }) => {
         }}
       >
         <Avatar alt="Zoo Logo" src={ZooLogo} />
-        <div style={{ display: "flex" }}>
+        {/* Desktop Navigation */}
+        <Box
+          sx={{
+            display: "flex",
+            [theme.breakpoints.down("md")]: {
+              display: "none",
+            },
+          }}
+        >
           <NonPopoverNavItem
             variant={variant}
             label="About"
@@ -78,7 +102,15 @@ export const Navbar = ({ id, isRecruiting }) => {
             label="Contact Us "
             href="#contact-us"
           />
-        </div>
+        </Box>
+
+        {/* Mobile Menu Component */}
+        <MobileNavMenu
+          isOpen={mobileMenuOpen}
+          onToggle={handleMobileMenuToggle}
+          onItemClick={handleMobileMenuItemClick}
+          isRecruiting={isRecruiting}
+        />
       </Toolbar>
     </AppBar>
   );
