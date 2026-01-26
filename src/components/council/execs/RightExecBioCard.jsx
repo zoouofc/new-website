@@ -27,10 +27,25 @@ export const RightExecBioCard = ({
         textAlign: "right",
         padding: theme.spacing(2, 0),
         justifyContent: isBioPresent ? "flex-start" : "center",
-        alignItems: isBioPresent ? "flex-start" : "center"
+        alignItems: isBioPresent ? "flex-start" : "center",
+        [theme.breakpoints.down("sm")]: {
+          flexFlow: "column",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
       }}
     >
-      <Grid item size="grow">
+      <Grid
+        item
+        size="grow"
+        sx={{
+          [theme.breakpoints.down("sm")]: {
+            order: 2,
+            padding: 0,
+          },
+        }}
+      >
         <Typography variant="h6" sx={{ lineHeight: 1 }}>
           {name}
         </Typography>
@@ -44,7 +59,17 @@ export const RightExecBioCard = ({
           </Typography>
         )}
       </Grid>
-      <Grid item sx={{ padding: theme.spacing(0, 0, 0, 2) }}>
+      <Grid
+        item
+        sx={{
+          padding: theme.spacing(0, 0, 0, 2),
+          [theme.breakpoints.down("sm")]: {
+            order: 1,
+            padding: 0,
+            margin: theme.spacing(0, 0, -4)
+          },
+        }}
+      >
         <Avatar
           src={image}
           alt={`${position}_role`}

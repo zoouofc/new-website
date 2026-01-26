@@ -27,11 +27,24 @@ export const LeftExecBioCard = ({
         flexFlow: "row",
         justifyContent: isBioPresent ? "flex-start" : "center",
         alignItems: isBioPresent ? "flex-start" : "center",
+        [theme.breakpoints.down("sm")]: {
+          flexFlow: "column",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        },
       }}
     >
       <Grid
         item
-        sx={{ padding: theme.spacing(0, 2, 0, 0), alignContent: "center" }}
+        sx={{
+          padding: theme.spacing(0, 2, 0, 0),
+          alignContent: "center",
+          [theme.breakpoints.down("sm")]: {
+            padding: 0,
+            margin: theme.spacing(0, 0, -4),
+          },
+        }}
       >
         <Avatar
           src={image}
