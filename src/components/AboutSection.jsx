@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Typography, Link, useTheme, Container } from "@mui/material";
 
 export const AboutSection = () => {
@@ -28,7 +27,7 @@ export const AboutSection = () => {
         </Typography>
         <Typography variant="body1" paragraph>
           Any inquiries for ZOO can be voiced in-person in ENA 106, or via email
-          to {" "}
+          to{" "}
           <Link
             href="#"
             sx={{

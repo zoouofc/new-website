@@ -1,8 +1,6 @@
-// TODO: Add the ZOO easter egg by clicking on the avatar
 // TODO: Create mobile nav bar
 
 // Package Imports
-import React from "react";
 import { AppBar, Toolbar, CssBaseline, useTheme, Avatar } from "@mui/material";
 
 // Project-defined Imports
@@ -34,13 +32,21 @@ export const Navbar = ({ isRecruiting }) => {
           justifyContent: "space-between",
         }}
       >
-        <Avatar alt="Zoo Logo" src={ZooLogo} />
+        <a
+          href={"/meaning-of-zoo"}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <Avatar alt="Zoo Logo" src={ZooLogo} />
+        </a>
         <div style={{ display: "flex" }}>
           <NonPopoverNavItem
             variant={variant}
             label="About"
             href="/#about-zoo"
           />
+
           <NavMenuPopover
             variant={variant}
             menuId={"council-menu"}
@@ -49,6 +55,7 @@ export const Navbar = ({ isRecruiting }) => {
           >
             <CouncilNavMenuItems isRecruiting={isRecruiting} />
           </NavMenuPopover>
+
           <NavMenuPopover
             variant={variant}
             menuId={"events-menu"}
@@ -57,6 +64,7 @@ export const Navbar = ({ isRecruiting }) => {
           >
             <EventNavMenuItems />
           </NavMenuPopover>
+
           <NavMenuPopover
             variant={variant}
             menuId={"sponsor-menu"}
@@ -65,13 +73,7 @@ export const Navbar = ({ isRecruiting }) => {
           >
             <SponsorNavMenuItems />
           </NavMenuPopover>
-          <NonPopoverNavItem
-            variant={variant}
-            label="Merch"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/forms/d/1xklzzmnqItOQTrWebtIDlzhENleiMcjl9xAfOhq5yR4/preview"
-          />
+
           <NonPopoverNavItem
             variant={variant}
             label="Contact Us "
