@@ -17,14 +17,13 @@ import NavMenuPopover from "./popover/NavMenuPopover";
 // Images
 import ZooLogo from "../../assets/ZooLogo.svg";
 
-export const Navbar = ({ id, isRecruiting }) => {
+export const Navbar = ({ isRecruiting }) => {
   const theme = useTheme();
   const variant = "body1";
 
   return (
     <AppBar
       position="static"
-      id={id}
       sx={{
         backgroundColor: theme.palette.blue.primary,
       }}
@@ -40,7 +39,7 @@ export const Navbar = ({ id, isRecruiting }) => {
           <NonPopoverNavItem
             variant={variant}
             label="About"
-            href="#about-zoo"
+            href="/#about-zoo"
           />
           <NavMenuPopover
             variant={variant}
@@ -76,7 +75,7 @@ export const Navbar = ({ id, isRecruiting }) => {
           <NonPopoverNavItem
             variant={variant}
             label="Contact Us "
-            href="#contact-us"
+            href="/#contact-us"
           />
         </div>
       </Toolbar>

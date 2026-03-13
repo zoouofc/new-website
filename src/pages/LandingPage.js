@@ -5,8 +5,8 @@ import { AboutSection } from "../components/AboutSection";
 import { CouncilSection } from "../components/council/CouncilSection";
 import { EventSection } from "../components/events/EventSection";
 
-const LandingPage = ({isRecruiting}) => {
-  
+const LandingPage = ({ isRecruiting }) => {
+
   return (
     <>
       <Carousel />

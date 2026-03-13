@@ -1,12 +1,12 @@
 import { EventSection } from "../components/events/EventSection";
 
-const EventPage = ({isRecruiting}) => {
-  
+const EventPage = () => {
+
   return (
     <>
-        <div>
-            The Event Page
-        </div>
+      <div>
+        The Event Page
+      </div>
       <EventSection />
     </>
   );

@@ -8,12 +8,12 @@ export const SponsorNavMenuItems = ({ handleClose }) => (
   <>
     <NavMenuItem
       handleClose={handleClose}
-      href={"#become-sponsor"}
+      href={"/#become-sponsor"}
       label="Become a Sponsor"
     />
     <NavMenuItem
       handleClose={handleClose}
-      href={"#sponsors"}
+      href={"/#sponsors"}
       label="Our Sponsors"
     />
   </>
