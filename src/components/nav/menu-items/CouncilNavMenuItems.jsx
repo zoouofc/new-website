@@ -8,18 +8,18 @@ export const CouncilNavMenuItems = ({ handleClose, isRecruiting }) => (
   <>
     <NavMenuItem
       handleClose={handleClose}
-      href={"#exec-council"}
+      href={"/#exec-council"}
       label="Executive Council"
     />
     <NavMenuItem
       handleClose={handleClose}
-      href={"#comms"}
+      href={"/#comms"}
       label="Commissioners"
     />
     {isRecruiting && (
       <NavMenuItem
         handleClose={handleClose}
-        href={"#join-team"}
+        href={"/#join-team"}
         label="Join the Team"
       />
     )}
