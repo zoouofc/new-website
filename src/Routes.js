@@ -17,7 +17,7 @@ export const Routes = () => {
         <ThemeProvider theme={rootTheme}>
             <Navbar id="back-to-top-anchor" isRecruiting={isRecruiting} />
             <ReactRoutes>
-                <Route path="/" element={<LandingPage />} />
+                <Route path="/" element={<LandingPage isRecruiting={isRecruiting} />} />
                 <Route path="/past-events" element={<EventPage />} />
                 <Route path="/meaning-of-zoo" element={<ZooMeaningPage />} />
             </ReactRoutes>
