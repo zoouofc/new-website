@@ -1,8 +1,6 @@
-// TODO: Add the ZOO easter egg by clicking on the avatar
 // TODO: Create mobile nav bar
 
 // Package Imports
-import React from "react";
 import { AppBar, Toolbar, CssBaseline, useTheme, Avatar } from "@mui/material";
 
 // Project-defined Imports
@@ -17,14 +15,13 @@ import NavMenuPopover from "./popover/NavMenuPopover";
 // Images
 import ZooLogo from "../../assets/ZooLogo.svg";
 
-export const Navbar = ({ id, isRecruiting }) => {
+export const Navbar = ({ isRecruiting }) => {
   const theme = useTheme();
   const variant = "body1";
 
   return (
     <AppBar
       position="static"
-      id={id}
       sx={{
         backgroundColor: theme.palette.blue.primary,
       }}
@@ -35,13 +32,21 @@ export const Navbar = ({ id, isRecruiting }) => {
           justifyContent: "space-between",
         }}
       >
-        <Avatar alt="Zoo Logo" src={ZooLogo} />
+        <a
+          href={"/meaning-of-zoo"}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <Avatar alt="Zoo Logo" src={ZooLogo} />
+        </a>
         <div style={{ display: "flex" }}>
           <NonPopoverNavItem
             variant={variant}
             label="About"
-            href="#about-zoo"
+            href="/#about-zoo"
           />
+
           <NavMenuPopover
             variant={variant}
             menuId={"council-menu"}
@@ -50,6 +55,7 @@ export const Navbar = ({ id, isRecruiting }) => {
           >
             <CouncilNavMenuItems isRecruiting={isRecruiting} />
           </NavMenuPopover>
+
           <NavMenuPopover
             variant={variant}
             menuId={"events-menu"}
@@ -58,6 +64,7 @@ export const Navbar = ({ id, isRecruiting }) => {
           >
             <EventNavMenuItems />
           </NavMenuPopover>
+
           <NavMenuPopover
             variant={variant}
             menuId={"sponsor-menu"}
@@ -66,17 +73,11 @@ export const Navbar = ({ id, isRecruiting }) => {
           >
             <SponsorNavMenuItems />
           </NavMenuPopover>
-          <NonPopoverNavItem
-            variant={variant}
-            label="Merch"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/forms/d/1xklzzmnqItOQTrWebtIDlzhENleiMcjl9xAfOhq5yR4/preview"
-          />
+
           <NonPopoverNavItem
             variant={variant}
             label="Contact Us "
-            href="#contact-us"
+            href="/#contact-us"
           />
         </div>
       </Toolbar>
