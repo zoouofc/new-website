@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Paper, Typography, useTheme } from "@mui/material";
 
 export const EventCard = ({ icon, eventName }) => {

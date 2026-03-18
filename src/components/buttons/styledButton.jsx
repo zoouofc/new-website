@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Button, useTheme } from "@mui/material";
 
 export const StyledButton = ({ children, href }) => {

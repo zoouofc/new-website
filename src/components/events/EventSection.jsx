@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Box, Container, Typography, useTheme, Grid } from "@mui/material";
 
 // Project-defined Components
@@ -105,7 +104,7 @@ export const EventSection = () => {
             for a look into our other successful events
           </Typography>
           <StyledButton href="/events-gallery">
-            VIEW Events GALLERY
+            View Events Gallery
           </StyledButton>
         </div>
       </Container>

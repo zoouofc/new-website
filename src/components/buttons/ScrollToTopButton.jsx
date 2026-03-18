@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Box, Fade, Fab, useTheme } from "@mui/material";
 import { useWindowScroll } from "@uidotdev/usehooks";

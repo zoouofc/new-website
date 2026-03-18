@@ -1,6 +1,3 @@
-// Package Imports
-import React from "react";
-
 // Project-defined Imports
 import NavMenuItem from "./NavMenuItem";
 
