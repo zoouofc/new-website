@@ -10,7 +10,7 @@ export const SponsorSection = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <Container maxWidth="md" style={{ margin: theme.spacing(6, 0, 7) }}>
-        <Typography variant="h4" id="about-zoo">
+        <Typography variant="h4" id="become-sponsor">
           Become a Sponsor
         </Typography>
         <Typography variant="body1" paragraph>
