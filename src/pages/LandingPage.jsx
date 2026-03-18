@@ -4,6 +4,7 @@ import { Carousel } from "../components/carousel/Carousel";
 import { AboutSection } from "../components/AboutSection";
 import { CouncilSection } from "../components/council/CouncilSection";
 import { EventSection } from "../components/events/EventSection";
+import { SponsorSection } from "../components/sponsors/SponsorSection";
 
 const LandingPage = ({ isRecruiting }) => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = ({ isRecruiting }) => {
       <AboutSection />
       <CouncilSection isRecruiting={isRecruiting} />
       <EventSection />
+      <SponsorSection />
       <ScrollToTopButton />
     </>
   );
