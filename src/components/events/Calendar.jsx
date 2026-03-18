@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Paper } from "@mui/material";
 import { useTheme } from "@emotion/react";
 

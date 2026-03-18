@@ -1,6 +1,5 @@
 // Package Imports
-import React from "react";
-import { Typography, Box, Button, useTheme, Container } from "@mui/material";
+import { Typography, Box, useTheme, Container } from "@mui/material";
 
 // Project-defined Imports
 import { ExecSubSection } from "./execs/ExecSubSection";

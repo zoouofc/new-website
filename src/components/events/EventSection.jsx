@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { Box, Container, Typography, useTheme, Grid } from "@mui/material";
 
 // Project-defined Components

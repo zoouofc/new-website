@@ -1,8 +1,4 @@
-// Component that has image and bio description from each exec
-// pass in image, email, role name, and pass in text (name, bio)
-
 // Package Imports
-import React from "react";
 import { useTheme, Grid, Typography, Avatar } from "@mui/material";
 
 // Icon Imports

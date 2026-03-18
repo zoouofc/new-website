@@ -1,5 +1,4 @@
 // Package Imports
-import React from "react";
 import { MenuItem, useTheme } from "@mui/material";
 
 export const NavMenuItem = ({ handleClose, label, href }) => {

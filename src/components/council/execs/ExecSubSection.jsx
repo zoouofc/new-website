@@ -1,7 +1,6 @@
 //TODO: Update mobile styling to increase width of description text (60%/70% width instead)
 
 // Package Imports
-import React from "react";
 import { useTheme, Typography } from "@mui/material";
 import { isEmpty } from "lodash";
 
