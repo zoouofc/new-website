@@ -1,9 +1,9 @@
 // Package Imports
 import React, { Children, isValidElement, cloneElement } from "react";
-import { Menu, Button, Typography, useTheme } from "@mui/material";
+import { Menu, Button, Typography, useTheme, Box } from "@mui/material";
 
 // Icon Imports
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropUp";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 // Project-defined Imports
 import { usePopoverHook } from "./usePopoverHook";
@@ -28,28 +28,33 @@ export const NavMenuPopover = ({
 
   return (
     <>
-      <Button
-        id={buttonId}
-        aria-controls={open ? menuId : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        onClick={handleClick}
-        endIcon={<ArrowDropDownIcon />}
+      <Box
+        alignContent={"center"}
         sx={{
+          "&:hover": {
+            backgroundColor: theme.palette.blue.hover,
+          },
           padding: theme.spacing(1, 1.5),
           textTransform: "none",
           color: theme.palette.white.secondary,
           "& .MuiButton-endIcon": {
             marginLeft: 0,
           },
-          "&:hover": {
-            backgroundColor: theme.palette.blue.hover,
-          },
         }}
+        component={Button}
+        onClick={handleClick}
+        id={buttonId}
+        aria-controls={open ? menuId : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        endIcon={open ? <ExpandMore /> : <ExpandLess />}
         classes={{ endIcon: { marginLeft: 0 } }}
+        border={0}
+        borderRadius={theme.spacing(1.25)}
+        boxSizing={"border-box"}
       >
         <Typography variant={variant}>{buttonLabel}</Typography>
-      </Button>
+      </Box>
       <Menu
         id={menuId}
         anchorEl={anchorEl}

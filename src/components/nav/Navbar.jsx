@@ -1,87 +1,53 @@
-// TODO: Create mobile nav bar
-
 // Package Imports
 import { AppBar, Toolbar, CssBaseline, useTheme, Avatar } from "@mui/material";
+import { Link } from "react-router";
 
 // Project-defined Imports
-import {
-  CouncilNavMenuItems,
-  EventNavMenuItems,
-  SponsorNavMenuItems,
-} from "./menu-items";
-import NonPopoverNavItem from "./NonPopoverNavItem";
-import NavMenuPopover from "./popover/NavMenuPopover";
+import { MobileNav } from "./mobile/MobileNav";
+import { DesktopNav } from "./desktop/DesktopNav";
 
 // Images
 import ZooLogo from "../../assets/ZooLogo.svg";
 
+
 export const Navbar = ({ isRecruiting }) => {
   const theme = useTheme();
-  const variant = "body1";
 
   return (
-    <AppBar
-      position="static"
-      sx={{
-        backgroundColor: theme.palette.blue.primary,
-      }}
-    >
-      <CssBaseline />
-      <Toolbar
+    <>   
+      <AppBar
+        id="navbar"
+        position="relative"
         sx={{
-          justifyContent: "space-between",
+          backgroundColor: theme.palette.blue.primary,
+          height: {xs: "56px", sm: "64px"},
+          width: "100vw",
+          zIndex: 1202
         }}
       >
-        <a
-          href={"/meaning-of-zoo"}
-          style={{
-            textDecoration: "none",
+        <CssBaseline />
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            width: "100%",
           }}
         >
-          <Avatar alt="Zoo Logo" src={ZooLogo} />
-        </a>
-        <div style={{ display: "flex" }}>
-          <NonPopoverNavItem
-            variant={variant}
-            label="About"
-            href="/#about-zoo"
-          />
-
-          <NavMenuPopover
-            variant={variant}
-            menuId={"council-menu"}
-            buttonLabel={"Council"}
-            buttonId={"council-nav-button"}
+          <Link
+            to={"/meaning-of-zoo"}
+            style={{
+              textDecoration: "none",
+            }}
           >
-            <CouncilNavMenuItems isRecruiting={isRecruiting} />
-          </NavMenuPopover>
-
-          <NavMenuPopover
-            variant={variant}
-            menuId={"events-menu"}
-            buttonLabel={"Events"}
-            buttonId={"events-nav-button"}
-          >
-            <EventNavMenuItems />
-          </NavMenuPopover>
-
-          <NavMenuPopover
-            variant={variant}
-            menuId={"sponsor-menu"}
-            buttonLabel={"Sponsors"}
-            buttonId={"sponsor-nav-button"}
-          >
-            <SponsorNavMenuItems />
-          </NavMenuPopover>
-
-          <NonPopoverNavItem
-            variant={variant}
-            label="Contact Us "
-            href="/#contact-us"
-          />
-        </div>
-      </Toolbar>
-    </AppBar>
+            <Avatar alt="Zoo Logo" src={ZooLogo} />
+          </Link>
+            
+          {/* Mobile Navbar */}
+          <MobileNav />
+          {/* Desktop Navbar */}
+          <DesktopNav isRecruiting={isRecruiting} />
+        </Toolbar>
+      </AppBar>
+    </>
   );
 };
 export default Navbar;
